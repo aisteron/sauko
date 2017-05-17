@@ -1,0 +1,268 @@
+@import 'colors.less';
+
+
+body{margin:0; font-family: Arial, sans-serif}
+
+
+.screen1
+{
+  background: url(../img/mir.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height:100vh;
+
+	div.wrapnavheader 
+	{
+		position:fixed;
+		//padding-left: 21%;
+		width:100%;
+		background: rgba(0, 0, 0, 0.36);
+		padding-bottom:1em;
+		  
+		  .navheader
+		
+			{
+				//display:flex;
+				//justify-content: space-around;
+				padding: 21px 0;
+				color:#fff;
+				font-weight: bold;
+				text-transform: uppercase;
+				font-size: 0.9em;
+				
+				//top: 50%;
+				
+				width:80%;
+				margin:0 auto;
+				
+				a {
+					color:#fff;
+					text-decoration:none;
+					transition: color 0.5s ease-out; 
+					&:hover {color:@green}
+				  }
+
+
+				p.logo {margin:0; padding:0; display:inline;float:left;}
+
+				ul.nav 
+					{
+
+					margin:0;
+					padding:0;
+					float:right;
+
+
+					li.lang { cursor:pointer; &:hover .innerList {display:block;} .fa-sort-down {vertical-align: top}}
+
+						li
+						{
+							display:inline-block;
+							margin-right:1em;
+
+							ul 
+								{
+									margin:0;
+									padding:0;
+									position: absolute;
+									display:none;
+									line-height: 2em;
+
+
+									li 
+									{
+										display:list-item;
+										list-style-type: none;
+
+									}
+								}
+						}
+
+					}
+				.hiddenNav	{display:none}
+			}
+	}
+	section.bigtext
+	{
+		text-align:center;
+		color:#fff;
+
+		h1 
+		{
+			font-size:10rem; 
+			text-shadow: 1px 1px 1px #111;
+			margin-top:0;
+			padding-top:1em;
+		}
+		button 
+			{
+				background-color:@blue;
+				border:none;
+				border-radius:22px;
+				padding:1em;
+				color:#fff;
+				font-size:1em;
+				cursor:pointer;
+				transition: background-color 0.5s ease-out;
+
+				&:hover {background-color: @green; box-shadow: 1px 2px 3px #4a7b31;}
+			}
+		p.desc
+			{
+				font-size:1.5em;
+			}	
+	}
+
+} // end of Screen # 1
+
+
+/*  SCREEN #2 */
+
+.screen2
+{
+	//height:50vh;
+	text-align: center;
+
+	h2 
+	{
+		font-size: 70px;
+	    line-height: .8;
+	    color: @green;
+	    letter-spacing: -5px;
+	    margin-bottom: 20px;
+	}
+
+	section.features
+		{
+			display:flex;
+			justify-content: space-around;
+			margin-top: 3em;
+
+			.item
+			{
+				width:400px;
+				.fa 
+				{
+					font-size:10em;
+					color:#111;
+					transition: color 0.5s ease-out;
+
+					&:hover
+						{
+							color:@green;
+						}
+				}
+
+				h4
+					{
+						font-size:1.3em;
+					}
+
+				p
+					{
+						color:#777;
+						font-size: 1.1em;
+					}
+			}
+		}
+
+	section.about
+		{
+			background-color: #fdfdfd;
+			border-top: 1px dashed #c7c5c5;
+			padding-top:1em;
+			img 
+				{
+					float:left;
+					margin:1em;
+					margin-left:13%;
+				}
+			
+			div.desc
+				{
+					width:90%;
+					padding:1em;
+					margin:0 auto;
+					text-align: left;
+
+					h3
+						{
+							margin:0;
+							font-size: 1.6em;
+    						font-weight: 100;
+						}
+					p
+						{
+							text-indent:1em;
+						}
+					.green {color:@green;font-weight:bold;}
+
+
+				}
+		}	
+}
+
+/* SCREEN 3*/
+
+.clearfix {
+    zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+    content: "";
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+
+.screen3
+{
+	//height:480px;
+	background-image: url(../img/drop.jpg);
+	background-position: center;
+	text-align: center;
+	color:#fff;
+	padding-bottom:2em;
+
+	h4
+		{
+			font-size: 5em;
+			margin-bottom: 0.3em;
+		}
+	p
+		{
+			font-size: 1.2em;
+		}
+	input[type='text']
+		{
+			padding:1em;
+			border-radius:22px;
+			width:35%;
+			font-size: 0.9em;
+		}
+	input[type='submit']
+		{
+			border-radius:22px;
+			padding:1.1em;
+			border:none;
+			background-color: @blue;
+			transition:background-color 0.3s ease-out;
+			font-size: 0.9em;
+			cursor:pointer;
+			position:relative;
+			left:-3em;
+			color:#fff;
+
+			&:hover
+				{
+					background-color: @green;
+				}
+
+		}
+
+}
+
+@import 'media-queries.less';

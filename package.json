@@ -1,0 +1,16 @@
+{
+	"name"				:	"Sauko-travel",
+	"version"			:	"0.0.1",
+	"devDependencies"	:	{
+		"grunt"					:	"latest",
+		"grunt-contrib-less"	:	"latest",
+		"grunt-contrib-pug"		: 	"latest",
+	    "grunt-contrib-watch"	: 	"latest",
+	    "grunt-contrib-concat"	: 	"latest",
+	    "less-plugin-autoprefix": 	"latest",
+	    "less-plugin-clean-css"	: 	"latest",
+	    "grunt-criticalcss"		:	"latest",
+	    "grunt-browser-sync"	:	"latest"
+	}
+
+}

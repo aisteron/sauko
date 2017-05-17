@@ -1,0 +1,241 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+.screen1 {
+  background: url(../img/mir.jpg) no-repeat center center fixed;
+  background-size: cover;
+  height: 100vh;
+}
+.screen1 div.wrapnavheader {
+  position: fixed;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.36);
+  padding-bottom: 1em;
+}
+.screen1 div.wrapnavheader .navheader {
+  padding: 21px 0;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 0.9em;
+  width: 80%;
+  margin: 0 auto;
+}
+.screen1 div.wrapnavheader .navheader a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.5s ease-out;
+}
+.screen1 div.wrapnavheader .navheader a:hover {
+  color: #7ab55c;
+}
+.screen1 div.wrapnavheader .navheader p.logo {
+  margin: 0;
+  padding: 0;
+  display: inline;
+  float: left;
+}
+.screen1 div.wrapnavheader .navheader ul.nav {
+  margin: 0;
+  padding: 0;
+  float: right;
+}
+.screen1 div.wrapnavheader .navheader ul.nav li.lang {
+  cursor: pointer;
+}
+.screen1 div.wrapnavheader .navheader ul.nav li.lang:hover .innerList {
+  display: block;
+}
+.screen1 div.wrapnavheader .navheader ul.nav li.lang .fa-sort-down {
+  vertical-align: top;
+}
+.screen1 div.wrapnavheader .navheader ul.nav li {
+  display: inline-block;
+  margin-right: 1em;
+}
+.screen1 div.wrapnavheader .navheader ul.nav li ul {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  display: none;
+  line-height: 2em;
+}
+.screen1 div.wrapnavheader .navheader ul.nav li ul li {
+  display: list-item;
+  list-style-type: none;
+}
+.screen1 div.wrapnavheader .navheader .hiddenNav {
+  display: none;
+}
+.screen1 section.bigtext {
+  text-align: center;
+  color: #fff;
+}
+.screen1 section.bigtext h1 {
+  font-size: 10rem;
+  text-shadow: 1px 1px 1px #111;
+  margin-top: 0;
+  padding-top: 1em;
+}
+.screen1 section.bigtext button {
+  background-color: #288dff;
+  border: none;
+  border-radius: 22px;
+  padding: 1em;
+  color: #fff;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.5s ease-out;
+}
+.screen1 section.bigtext button:hover {
+  background-color: #7ab55c;
+  box-shadow: 1px 2px 3px #4a7b31;
+}
+.screen1 section.bigtext p.desc {
+  font-size: 1.5em;
+}
+/*  SCREEN #2 */
+.screen2 {
+  text-align: center;
+}
+.screen2 h2 {
+  font-size: 70px;
+  line-height: .8;
+  color: #7ab55c;
+  letter-spacing: -5px;
+  margin-bottom: 20px;
+}
+.screen2 section.features {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 3em;
+}
+.screen2 section.features .item {
+  width: 400px;
+}
+.screen2 section.features .item .fa {
+  font-size: 10em;
+  color: #111;
+  transition: color 0.5s ease-out;
+}
+.screen2 section.features .item .fa:hover {
+  color: #7ab55c;
+}
+.screen2 section.features .item h4 {
+  font-size: 1.3em;
+}
+.screen2 section.features .item p {
+  color: #777;
+  font-size: 1.1em;
+}
+.screen2 section.about {
+  background-color: #fdfdfd;
+  border-top: 1px dashed #c7c5c5;
+  padding-top: 1em;
+}
+.screen2 section.about img {
+  float: left;
+  margin: 1em;
+  margin-left: 13%;
+}
+.screen2 section.about div.desc {
+  width: 90%;
+  padding: 1em;
+  margin: 0 auto;
+  text-align: left;
+}
+.screen2 section.about div.desc h3 {
+  margin: 0;
+  font-size: 1.6em;
+  font-weight: 100;
+}
+.screen2 section.about div.desc p {
+  text-indent: 1em;
+}
+.screen2 section.about div.desc .green {
+  color: #7ab55c;
+  font-weight: bold;
+}
+/* SCREEN 3*/
+.clearfix {
+  zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+.screen3 {
+  background-image: url(../img/drop.jpg);
+  background-position: center;
+  text-align: center;
+  color: #fff;
+  padding-bottom: 2em;
+}
+.screen3 h4 {
+  font-size: 5em;
+  margin-bottom: 0.3em;
+}
+.screen3 p {
+  font-size: 1.2em;
+}
+.screen3 input[type='text'] {
+  padding: 1em;
+  border-radius: 22px;
+  width: 35%;
+  font-size: 0.9em;
+}
+.screen3 input[type='submit'] {
+  border-radius: 22px;
+  padding: 1.1em;
+  border: none;
+  background-color: #288dff;
+  transition: background-color 0.3s ease-out;
+  font-size: 0.9em;
+  cursor: pointer;
+  position: relative;
+  left: -3em;
+  color: #fff;
+}
+.screen3 input[type='submit']:hover {
+  background-color: #7ab55c;
+}
+@media only screen and (max-width: 1000px) {
+  .screen1 div.wrapnavheader section.bigtext h1 {
+    font-size: 8em;
+  }
+  .navheader {
+    width: 100%;
+    left: 0;
+  }
+  section.features {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .screen1 div.wrapnavheader .navheader ul.nav {
+    display: none;
+  }
+  .screen1 div.wrapnavheader .navheader span.hiddenNav {
+    display: block;
+    float: right;
+  }
+  .screen1 section.bigtext h1 {
+    font-size: 4em;
+  }
+  .screen2 section.about img {
+    float: none;
+    margin: 0 auto;
+  }
+  div.screen3 h4 {
+    font-size: 2em;
+  }
+}
+/*# sourceMappingURL=dev/css/custom.css.map */

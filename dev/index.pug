@@ -7,10 +7,13 @@ html(lang="ru")
 		meta(charset="utf-8")
 		meta(name="description" content="Частные экскурсии по Беларуси и Минску: Мир и Несвиж, Сула, Хатынь, Линия Сталина, Островецкая кругосветка, Вязынка и множество других экскурсий на русском, беларуском и английском")
 		link(href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA/Pr6AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABEAEQAAAAABEQAREAAAABERABERAAABEREAEREQAAAREQAREQAAABERABERAAABERAAAREQAAERAAAAERAAAREAAAAREAABEQAAABEQABEQAAAAEREAEAAAAAAAAQAAAAAAAAAAD//wAA//8AAP//AAD5nwAA8Y8AAOGHAADBgwAA4YcAAOGHAADDwwAAx+MAAMfjAADH4wAAj+EAAL/9AAD//wAA" rel="icon" type="image/x-icon")
-		script(src='https://use.fontawesome.com/b67eda653c.js')       	
+		script(src='https://use.fontawesome.com/b67eda653c.js' defer)
+		script(src='dev/js/lazysizes.min.js' defer)       	
+		script(src='dev/js/ls.unveilhooks.min.js' defer)       	
+		script(src='dev/js/ls.bgset.min.js' defer)       	
 	body
 		div.wrap
-			div.screen1
+			<div class='screen1 lazyload' data-bgset="dev/img/image1-400.jpg 400w, dev/img/mir.jpg 600w">
 				div.wrapnavheader
 					header.navheader
 						p.logo 
@@ -61,7 +64,7 @@ html(lang="ru")
 						h4 Опыт работы
 						p Экскурсии по Беларуси начала проводить еще в студенческие годы. Всегда старалась использовать любую возможность, начиная подготовкой текстов и маршрутов экскурсий и заканчивая проведением экскурсий. Уже второй год я участвую в “Фэсце экскурсаводаў”, где с удовольствием рассказываю об учебной жизни Минска. Проходила экскурсионную практику в ТЭУП «Беларустурист». 
 				section.about
-					img(src='dev/img/inna.jpg' alt='экскурсовод Инна Савко' title='Самый лучший экскурсовод в Беларуси ^_^')
+					img(class='lazyload' data-src='dev/img/inna.jpg' alt='экскурсовод Инна Савко' title='Самый лучший экскурсовод в Беларуси ^_^')
 					div.desc
 						h3 Здравствуй, мой дорогой турист!
 						p Меня зовут Инна, мне 22. Я экскурсовод. Закончила исторический факультет Белорусского государственного университета, <b>моя специализация</b> – Культурное наследие и туризм. Еще в школе мне очень нравилось путешествовать по своей синеокой. В школе мы активно ездили на различные экскурсии, а, где-то в 8 классе, когда мы ездили на экскурсию в Брест, я «наблюдала» за нашим экскурсоводом и мысленно представляла себя в  этом образе.
@@ -70,7 +73,7 @@ html(lang="ru")
 						p С удовольствием провожу экскурсии по всей Беларуси.
 						p Организую «тур под ключ»/тур любого уровня с проживанием, питанием, посещением музеем, аквапарка, театров, агроусадеб…
 						p.green С радостью и любовью расскажу Вам о своей синеокой!
-			div.screen3.clearfix
+			div.screen3.clearfix.lazyload(data-bg="dev/img/drop.jpg")
 				h4 Блог экскурсовода
 				p Подпишитесь, чтобы читать записки экскурсовода
 				form

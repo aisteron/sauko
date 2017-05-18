@@ -23,11 +23,48 @@ if (!mobilecheck()){ //if desktop
 		}
 		*/
 		if (vid[0].paused) {
-            vid[0].play();
+			//Avoid the Promise Error
+			setTimeout(function () {      
+			   vid[0].play();
+			}, 150);
+           
         } else {
             vid[0].pause();
         }
-	})
+        /*
+		
+		        // Initializing values
+		var onplaying = true;
+		var onpause = false;
+
+		// On video playing toggle values
+		vid[0].onplaying = function() {
+		    onplaying = true;
+		    onpause = false;
+		};
+
+		// On video pause toggle values
+		vid[0].onpause = function() {
+		    onplaying = false;
+		    onpause = true;
+		};
+
+		// Play video function
+		function playVid() {      
+		    if (vid[0].paused && !onplaying) {
+		        vid[0].play();
+		    }
+		} 
+
+		// Pause video function
+		function pauseVid() {     
+		    if (!vid[0].paused && !onpause) {
+		        vid[0].pause();
+		    }
+		}
+
+		*/
+	}); //addEventListener
 
 }
 

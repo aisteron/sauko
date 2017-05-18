@@ -9,11 +9,13 @@ html(lang="ru")
 		link(href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA/Pr6AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABEAEQAAAAABEQAREAAAABERABERAAABEREAEREQAAAREQAREQAAABERABERAAABERAAAREQAAERAAAAERAAAREAAAAREAABEQAAABEQABEQAAAAEREAEAAAAAAAAQAAAAAAAAAAD//wAA//8AAP//AAD5nwAA8Y8AAOGHAADBgwAA4YcAAOGHAADDwwAAx+MAAMfjAADH4wAAj+EAAL/9AAD//wAA" rel="icon" type="image/x-icon")
 		script(src='https://use.fontawesome.com/b67eda653c.js' defer)
 		script(src='dev/js/lazysizes.min.js' defer)       	
-		script(src='dev/js/ls.unveilhooks.min.js' defer)       	
-		script(src='dev/js/ls.bgset.min.js' defer)       	
+		//script(src='dev/js/ls.unveilhooks.min.js' defer)       	
+		//script(src='dev/js/ls.bgset.min.js' defer)       	
+		script(src='dev/js/custom.js' defer)
 	body
 		div.wrap
-			<div class='screen1 lazyload' data-bgset="dev/img/image1-400.jpg 400w, dev/img/mir.jpg 600w">
+			div.screen1 
+				// - .lazyload(data-bgset="dev/img/mir400.jpg 400w, dev/img/mir600.jpg 600w, dev/img/mir800.jpg 800w, dev/img/mir.jpg 1000w")
 				div.wrapnavheader
 					header.navheader
 						p.logo 
@@ -58,7 +60,7 @@ html(lang="ru")
 					div.item.item2
 						<i class="fa fa-graduation-cap" aria-hidden="true"></i>
 						h4 Аттестована
-						p 21.10.2016 года стала аттестованным экскурсоводом после сдачи экзамена в Национальном агентстве по туризму. Аттестация действительна 21.10.2021г.
+						p 21.10.2016 года стала аттестованным экскурсоводом после сдачи экзамена в Национальном агентстве по туризму. Аттестация <b>действительна до 21.10.2021г.</b>
 					div.item.item3
 						<i class="fa fa-puzzle-piece" aria-hidden="true"></i>
 						h4 Опыт работы
@@ -73,9 +75,38 @@ html(lang="ru")
 						p С удовольствием провожу экскурсии по всей Беларуси.
 						p Организую «тур под ключ»/тур любого уровня с проживанием, питанием, посещением музеем, аквапарка, театров, агроусадеб…
 						p.green С радостью и любовью расскажу Вам о своей синеокой!
-			div.screen3.clearfix.lazyload(data-bg="dev/img/drop.jpg")
+			div.screen3.clearfix
 				h4 Блог экскурсовода
 				p Подпишитесь, чтобы читать записки экскурсовода
 				form
 					input(type='text' placeholder='Введите вашу почту. Я не присылаю спам ^_^' required)
 					input(type='submit' value='Подписаться')
+				a(name='tours')
+			div.screen4
+				h2 Экскурсии
+				p
+					i Места, которые должен посетить каждый -)
+				section.cells
+					div.rowcell
+						div.cell
+							img(class='lazyload' data-src='dev/img/cells/1.jpg' alt='Свято Духов Кафедральный Собор в Минске' title='Свято Духов Кафедральный Собор в Минске')
+						div.cell
+							p 1. Обзорная экскурсия по Минску
+							p Архитектура лучших проспектов и площадей, зелень парков и улиц белорусской столицы… Ожившая история и личности, повлиявшие на ход развития Минска. Легенды и загадки, интриги и расследования – все это Вас ждет в автобусно-пешеходной экскурсии по Минску.
+						div.cell
+							img(class='lazyload' data-src='dev/img/cells/2.jpg' alt='Площадь Независимости в Минске' title='Площадь Независимости в Минске')
+					div.rowcell
+						div.cell
+							p 2. Пешеходная экскурсия по Минску
+							p Во время экскурсии Вы познакомитесь с архитектурным объектом, являющимся претендентом на включение Список Всемирного нематериального наследия ЮНЕСКО,  - проспектом Независимости и примыкающей к нему  - площади Независимости. Услышим легенды и анекдоты, связанные с площадью Свободы. Завершится экскурсия в Троицком предместье.
+						div.cell
+							img(class='lazyload' data-src='dev/img/cells/3.jpg' alt='Национальная библиотека в Минске' title='Национальная библиотека в Минске')
+						div.cell
+							p 3. Вечерний Минск
+							p Вечерняя подсветка города создаст Вам и Вашим близким романтическое и легкое настроение. Вы увидите в выигрышном свете одну из главных достопримечательностей Минска – Национальную библиотеку
+			div.screen5
+				video(poster="" id="bgvid" playsinline muted loop)
+					source(src="" type="video/mp4" id='videosource')
+				div.label
+					div.labelinner
+						h3 Вдохновляйтесь! <br> <i class="fa fa-play-circle-o" aria-hidden="true"></i>		

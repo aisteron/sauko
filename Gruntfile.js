@@ -31,13 +31,13 @@ module.exports = function(grunt){
 				      plugins: 
 				      	[
 				        new (require('less-plugin-autoprefix'))({browsers: ["last 3 versions"]})
-				        //,new (require('less-plugin-clean-css'))()
+				        ,new (require('less-plugin-clean-css'))()
 				        ],
-				       sourceMap:true, 
-				       sourceMapFilename: 'dev/css/custom.css.map', // where file is generated and located
-			           sourceMapURL: 'dev/css/custom.css.map', // the complete url and filename put in the compiled css file
-			           sourceMapBasepath: 'dev', // Sets sourcemap base path, defaults to current working directory.
-			           sourceMapRootpath: '/', // adds this path onto the sourcemap filename and less file paths
+				       //sourceMap:true, 
+				       //sourceMapFilename: 'dev/css/custom.css.map', // where file is generated and located
+			           //sourceMapURL: 'dev/css/custom.css.map', // the complete url and filename put in the compiled css file
+			           //sourceMapBasepath: 'dev', // Sets sourcemap base path, defaults to current working directory.
+			           //sourceMapRootpath: '/', // adds this path onto the sourcemap filename and less file paths
         			
 				    },
 			    files: 

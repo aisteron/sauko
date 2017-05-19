@@ -548,6 +548,7 @@ body{margin:0; font-family: Arial, sans-serif}
 .screen9
 {
 	text-align:center;
+	border-bottom: 1px solid #ccc;
 
 	h4
 		{
@@ -579,7 +580,49 @@ body{margin:0; font-family: Arial, sans-serif}
 		}		
 }
 
+.screen10
+{
+	display:flex;
+	flex-wrap:wrap;
+	a 
+		{
+			color:#555;
+			text-decoration: none;
+			font-weight:bold;
+			text-transform: uppercase;
 
+			&:hover
+				{
+					text-decoration: underline;
+				}	
+		}
+	
+	.column
+		{
+			margin-left:2em;
+
+			.fa 
+				{
+					font-size:2em;
+					color:@blue;
+				}
+			p:nth-child(2)
+			{
+				font-size:0.8em;
+			}	
+		}
+	.column:first-child
+		{
+			margin:auto;
+		}
+	.column li
+		{
+			//list-style-type: none;
+			line-height:240%;
+			color:@green;
+		}
+
+}
 
 
 

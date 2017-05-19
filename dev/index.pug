@@ -100,11 +100,16 @@ html(lang="ru")
 							p 3. Вечерний Минск
 							p Вечерняя подсветка города создаст Вам и Вашим близким романтическое и легкое настроение. Вы увидите в выигрышном свете одну из главных достопримечательностей Минска – Национальную библиотеку
 			div.screen5
-				video(poster="" id="bgvid" playsinline muted loop)
+				//video(poster="" id="bgvid" playsinline muted loop preload='none' controls)
+				//video(id="bgvid" controls preload='none')
 					source(src="" type="video/mp4" id='videosource')
+				video(width="400" muted)
+					source(src="dev/img/video.mp4" type="video/mp4")
+					p Your browser does not support HTML5 video.
+
 				div.label
 					div.labelinner
-						h3 Вдохновляйтесь! <br> <i class="fa fa-play-circle-o" aria-hidden="true"></i>
+						h3 Вдохновляйтесь! <br><br><br> <i class="fa fa-play-circle-o" aria-hidden="true"></i>
 			div.screen6
 				div.price
 					p 

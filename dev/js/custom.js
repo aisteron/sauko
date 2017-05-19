@@ -6,10 +6,10 @@ window.mobilecheck = function() {
 
 if (!mobilecheck()){ //if desktop
 	console.log('this is desktop, go load 524KB of video!');
-	var vid = document.querySelectorAll('#bgvid');
-	var videosource = document.querySelectorAll('#videosource');
-	vid[0].setAttribute('poster', 'dev/img/videobg.jpg');
-	videosource[0].setAttribute('src', 'dev/img/video.mp4');
+	var vid = document.querySelectorAll('.screen5 video');
+	//var videosource = document.querySelectorAll('#videosource');
+	//vid[0].setAttribute('poster', 'dev/img/videobg.jpg');
+	//videosource[0].setAttribute('src', 'dev/img/video.mp4');
 
 	var screen5 = document.querySelectorAll('.screen5');
 	screen5[0].style.display = 'block';
@@ -22,6 +22,7 @@ if (!mobilecheck()){ //if desktop
 			vid[0].pause();
 		}
 		*/
+	var vid = document.querySelectorAll('.screen5 video');	
 		if (vid[0].paused) {
 			//Avoid the Promise Error
 			setTimeout(function () {      

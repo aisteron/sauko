@@ -47,7 +47,8 @@ html(lang="ru")
 				section.bigtext
 					h1 Экскурсии <br>по Беларуси
 					p.desc Интересные места, увлекательные истории, индивидуальный подход.
-					button От 350 RUB
+					button 
+						a(href='#form') От 350 RUB
 					a(name='about')
 			div.screen2
 				h2 Обо мне
@@ -80,8 +81,8 @@ html(lang="ru")
 			div.screen3.clearfix
 				h4 Блог экскурсовода
 				p Подпишитесь, чтобы читать записки экскурсовода
-				form
-					input(type='text' placeholder='Введите вашу почту. Я не присылаю спам ^_^' required)
+				form.email
+					input(type='text' placeholder='Введите вашу почту. Я не присылаю спам ^_^' required name='temail')
 					input(type='submit' value='Подписаться')
 				a(name='tours')
 			div.screen4
@@ -166,11 +167,12 @@ html(lang="ru")
 						div.cell
 							img(class='lazyload' data-src='dev/img/cells/13.jpg' alt='Линия Сталина' title='Линия Сталина')
 						div.cell
-							a(name='video')
 							p 13. д. Станьково – ЦЭТ «Станьково»
 							p Экскурсия в Станьково познакомит нас с выдающимся магнатским родом, графами Чапскими. Эта небольшая деревня была родовым имением графов, где была построена усадьба и знаменитая «Скарбница», которая сохранилась и сейчас. 
-							p Продолжительность 5 часов									
+							p Продолжительность 5 часов
+
 			div.screen5
+				a(name='video')
 				video(width="400" muted)
 					source(src="dev/img/video.mp4" type="video/mp4")
 					p Your browser does not support HTML5 video.
@@ -195,15 +197,16 @@ html(lang="ru")
 							li 
 								i.fa.fa-user сопровождение 
 							li 
-								i.fa.fa-ticket некоторые входные билеты  	
+								i.fa.fa-ticket некоторые входные билеты
+							a(name='form')
 
 				div.form
 					p 
 						i Начните свое путешествие сегодня!
 					p.weight Откройте для себя <br>самобытную Беларусь!
-					form
-						input(type='text' placeholder='Ваше имя' reauired)
-						input(type='text' placeholder='Ваш телефон' required)
+					form.lead
+						input(type='text' placeholder='Ваше имя' required name='name')
+						input(type='text' placeholder='Ваш телефон' required name='phone')
 						input(type='submit' value='Поехали!')
 					a(name='testi')
 			div.screen7.ymap
@@ -285,13 +288,13 @@ html(lang="ru")
 				div.column
 					ul
 						li 
-							a(href='by.html') BY
+							a(href='by.html') Па-беларуску
 						li 
-							a(href='en.html') EN
+							a(href='en.html') In English
 						li 
-							a(href='pl.html') PL
+							a(href='pl.html') Polski
 						li 
-							a(href='lt.html') LT
+							a(href='lt.html') Lietuvių
 
 				div.column
 					p 

@@ -321,7 +321,7 @@ body{margin:0; font-family: Arial, sans-serif}
 
 .screen5
 {
-	//display:none;
+	display:none;
 	position: relative;
 	height:100vh;
 
@@ -490,4 +490,64 @@ body{margin:0; font-family: Arial, sans-serif}
 		}
 
 }
+
+
+
+.screen8
+{
+	h4
+		{
+			color: @blue;
+		    font-size: 14px;
+		    font-weight: 700;
+		    margin:3em;
+		    text-transform: uppercase;
+		    text-align:center;
+		    margin-bottom: 1.5em;
+		}
+	.swiper-container
+		{
+			max-width:700px;
+
+			.swiper-wrapper
+				{
+					.swiper-slide
+						{
+							text-align: center;
+							p.stars
+								{
+									color:gold;
+									i
+										{
+											padding-left:1em;
+										}
+								}
+							.testdeg		
+								{
+									min-height:80px;
+									text-transform:uppercase;
+									font-weight:bold;
+									line-height:140%;	
+									p 
+										{
+											margin:0;
+											padding:0;
+										}
+									p:nth-child(2)
+										{
+											color:#ccc;
+										}	
+								}
+						}
+				}
+		}
+}
+
+
+
+
+
+
+
+
 @import 'media-queries.less';

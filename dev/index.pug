@@ -139,13 +139,49 @@ html(lang="ru")
 						input(type='submit' value='Поехали!')
 			div.screen7.ymap
 				//script(type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ad73703b16c12ded75e42e2ed9d9d7128338742c5224b98dc6fb8239405be2337&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=true")
-			div.screen8
-				h4 Отзывы
+			div.screen8.lazyload(data-script='dev/js/swiper.min.js' data-link='dev/css/swiper.min.css')
+				h4 Отзывы о моей работе
+				div.swiper-container
+					div.swiper-wrapper
+						div.swiper-slide
+							p.stars
+								i.fa.fa-star(aria-hidden="true")
+								i.fa.fa-star(aria-hidden="true")
+								i.fa.fa-star(aria-hidden="true")
+								i.fa.fa-star(aria-hidden="true")
+								i.fa.fa-star(aria-hidden="true")
+							p “The best so far prototyping tool out there, very easy to use for a non coder, highly recommended.”
+							div.testdeg
+								p Randy &amp; Victoria
+								p New York - USA		
+						div.swiper-slide
+							p.stars
+								i.fa.fa-star(aria-hidden="true")
+								i.fa.fa-star(aria-hidden="true")
+								i.fa.fa-star(aria-hidden="true")
+								i.fa.fa-star(aria-hidden="true")
+								i.fa.fa-star(aria-hidden="true")
+							p “The best so far prototyping tool out there, very easy to use for a non coder, highly recommended.”
+							div.testdeg
+								p Randy &amp; Victoria
+								p New York - USA	
+						div.swiper-slide
+							p.stars
+								i.fa.fa-star(aria-hidden="true")
+								i.fa.fa-star(aria-hidden="true")
+								i.fa.fa-star(aria-hidden="true")
+								i.fa.fa-star(aria-hidden="true")
+								i.fa.fa-star(aria-hidden="true")
+							p “The best so far prototyping tool out there, very easy to use for a non coder, highly recommended.”
+							div.testdeg
+								p Randy &amp; Victoria
+								p New York - USA
+					div.swiper-pagination
 
 
 
 		script(src='https://use.fontawesome.com/b67eda653c.js' defer)
 		script(src='dev/js/lazysizes.min.js' defer)       	
-		//script(src='dev/js/ls.unveilhooks.min.js' defer)       	
+		script(src='dev/js/ls.unveilhooks.min.js' defer)       	
 		//script(src='dev/js/ls.bgset.min.js' defer)       	
 		script(src='dev/js/custom.js' defer)

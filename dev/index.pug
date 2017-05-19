@@ -9,6 +9,13 @@ html(lang="ru")
 		link(href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA/Pr6AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABEAEQAAAAABEQAREAAAABERABERAAABEREAEREQAAAREQAREQAAABERABERAAABERAAAREQAAERAAAAERAAAREAAAAREAABEQAAABEQABEQAAAAEREAEAAAAAAAAQAAAAAAAAAAD//wAA//8AAP//AAD5nwAA8Y8AAOGHAADBgwAA4YcAAOGHAADDwwAAx+MAAMfjAADH4wAAj+EAAL/9AAD//wAA" rel="icon" type="image/x-icon")
 	body
 		div.wrap
+			div#mySidenav.sidenav
+				a(href="javascript:void(0)" class="closebtn" onclick="closeNav()") &times; 
+				a(href='#about') Обо мне
+				a(href='#tours') Экскурсии
+				a(href='#video') Видео
+				a(href='#testi') Отзывы
+				a(href='#photo') Фото
 			div.screen1 
 				// - .lazyload(data-bgset="dev/img/mir400.jpg 400w, dev/img/mir600.jpg 600w, dev/img/mir800.jpg 800w, dev/img/mir.jpg 1000w")
 				div.wrapnavheader
@@ -36,7 +43,7 @@ html(lang="ru")
 										a(href='pl.html') PL
 									li 
 										a(href='lt.html') LT
-						span.hiddenNav <i class="fa fa-bars" aria-hidden="true"></i>				
+						span.hiddenNav(onclick="openNav()") <i class="fa fa-bars" aria-hidden="true"></i>				
 				section.bigtext
 					h1 Экскурсии <br>по Беларуси
 					p.desc Интересные места, увлекательные истории, индивидуальный подход.
@@ -88,21 +95,82 @@ html(lang="ru")
 						div.cell
 							p 1. Обзорная экскурсия по Минску
 							p Архитектура лучших проспектов и площадей, зелень парков и улиц белорусской столицы… Ожившая история и личности, повлиявшие на ход развития Минска. Легенды и загадки, интриги и расследования – все это Вас ждет в автобусно-пешеходной экскурсии по Минску.
+							p Продолжительность 3 часа
 						div.cell
 							img(class='lazyload' data-src='dev/img/cells/2.jpg' alt='Площадь Независимости в Минске' title='Площадь Независимости в Минске')
 					div.rowcell
 						div.cell
 							p 2. Пешеходная экскурсия по Минску
-							p Во время экскурсии Вы познакомитесь с архитектурным объектом, являющимся претендентом на включение Список Всемирного нематериального наследия ЮНЕСКО,  - проспектом Независимости и примыкающей к нему  - площади Независимости. Услышим легенды и анекдоты, связанные с площадью Свободы. Завершится экскурсия в Троицком предместье.
+							p Во время экскурсии Вы познакомитесь с архитектурным объектом, являющимся претендентом на включение Список Всемирного нематериального наследия ЮНЕСКО, - проспектом Независимости и примыкающей к нему - площади Независимости.
+							p Продолжительность 2 часа
 						div.cell
 							img(class='lazyload' data-src='dev/img/cells/3.jpg' alt='Национальная библиотека в Минске' title='Национальная библиотека в Минске')
 						div.cell
 							p 3. Вечерний Минск
 							p Вечерняя подсветка города создаст Вам и Вашим близким романтическое и легкое настроение. Вы увидите в выигрышном свете одну из главных достопримечательностей Минска – Национальную библиотеку
+							p Продолжительность 2,5 часа
+					div.rowcell
+						div.cell
+							img(class='lazyload' data-src='dev/img/cells/4.jpg' alt='Мирский замок' title='Мирский замок')
+						div.cell
+							p 5. Хатынь – Курган Славы
+							p Мемориальный комплекс «Хатынь» - памятник сотням уничтоженных, сожженных белорусских деревень. Деревня, которая была сожжена вместе со 149 жителями. Мертвая деревня, которая не оставит никого равнодушным.
+							p Продолжительность – 4 часа.
+						div.cell
+							img(class='lazyload' data-src='dev/img/cells/5.jpg' alt='Несвижский замок' title='Несвижский замок')
+					div.rowcell
+						div.cell
+							p 6. Дудутки
+							p Дудутки - один из самых популярных и посещаемых музеев Беларуси, в котором можно не только познавательно и интересно провести время, но и отдохнуть, продегустировать продукцию местного производства, в том числе самогон на броваре, покататься на лошадях, прогуляться по зоосаду.
+							p Продолжительность 5 часов
+						div.cell
+							img(class='lazyload' data-src='dev/img/cells/6.jpg' alt='мельница в Дудутках' title='мельница в Дудутках')
+						div.cell
+							p 7. Беловежская пуща – поместье Деда Мороза
+							p Экскурсия подарит Вам уникальную возможность познакомиться со старейшим памятником природы, внесенным в Список Всемирного наследия ЮНЕСКО - Беловежской пущей - одним из главных природных заповедников Европы, крупным туристическим центром Беларуси, куда съезжаются туристы со всего мира. 
+							p Продолжительность 16 часов
+					div.rowcell
+						div.cell
+							img(class='lazyload' data-src='dev/img/cells/7.jpg' alt='костел в Гервятах' title='костел в Гервятах')
+						div.cell
+							p 8. «Островецкая кругосветка»
+							p Во время экскурсии Вы познакомитесь с уникальным явлением белорусской культуры - местечко. С Вами мы остановимся и узнаем занимательные истории 6 местечек. Проездом увидим столько же. И да, конечно, нас ждет знакомство с одним из самых красивых костелов Беларуси – костелом Святой Троицы в Гервятах начала XX века.
+							p Продолжительность – 10 часов.
+						div.cell
+							img(class='lazyload' data-src='dev/img/cells/9.jpg' alt='Сула' title='Сула')
+					div.rowcell
+						div.cell
+							p 9. Рубежевичи – Сула
+							p Панскі маёнтак "Сула" - элитный центр культурной и светской жизни XVIII века. Сегодня эта восстановленная усадьба рода Ленских представляет собой место, где можно не только отдохнуть, но и познакомиться с историей белорусских земель от времен языческих верований, эпохи средневекового рыцарства, до времен балов и салонов XVIII- XIX веков. 
+							p Продолжительность 6 часов
+						div.cell
+							img(class='lazyload' data-src='dev/img/cells/10.jpg' alt='Гаенскія вытокі' title='Гаенскія вытокі')
+						div.cell
+							p 10. Логойск – агроэкоусадьба «Гаенскія вытокі»
+							p В Логойске Вы сможете набрать воды из святого источника, а также увидите главные храмы города. Затем нас ждет экскурсия и угощения от дядьки Сергея в агроэкоусадьбе «Гаенскія вытокі». Увлекательно, легко и вкусно! Поехали! 
+							p Продолжительность 16 часов
+					div.rowcell
+						div.cell
+							img(class='lazyload' data-src='dev/img/cells/11.jpg' alt='Костел Святого Михаила Архангела' title='Костел Святого Михаила Архангела')
+						div.cell
+							p 11. «Вёрсты памяти Старо-Виленского шляха»
+							p Экскурсия познакомит Вас с замечательным краем, который давным-давно назывался Черной Русью, а в 1930-х гг. – Западной Беларусью. Вас ждут уникальные архитектурные памятники, а с ними увлекательные истории об уроженцах этих мест и о произошедших здесь событиях. Во время экскурсии мы посетим такие места, как Залесье, Сморгонь, Кушляны, Ошмяны…
+							p Продолжительность – 10 часов.
+						div.cell
+							img(class='lazyload' data-src='dev/img/cells/12.jpg' alt='Вёрсты памяти Старо-Виленского шляха' title='Вёрсты памяти Старо-Виленского шляха')
+					div.rowcell
+						div.cell
+							p 12. Линия Сталина
+							p Историко-культурный комплекс «Линия Сталина» – один из наиболее грандиозных фортификационных ансамблей на территории Беларуси. Историко-культурный комплекс ”Линия Сталина” представляет собой военно-исторический <b>музей под открытым небом</b>. Историческую основу музея составляют ДОТы Минского укрепрайона. 
+							p Продолжительность 5 часов
+						div.cell
+							img(class='lazyload' data-src='dev/img/cells/13.jpg' alt='Линия Сталина' title='Линия Сталина')
+						div.cell
+							a(name='video')
+							p 13. д. Станьково – ЦЭТ «Станьково»
+							p Экскурсия в Станьково познакомит нас с выдающимся магнатским родом, графами Чапскими. Эта небольшая деревня была родовым имением графов, где была построена усадьба и знаменитая «Скарбница», которая сохранилась и сейчас. 
+							p Продолжительность 5 часов									
 			div.screen5
-				//video(poster="" id="bgvid" playsinline muted loop preload='none' controls)
-				//video(id="bgvid" controls preload='none')
-					source(src="" type="video/mp4" id='videosource')
 				video(width="400" muted)
 					source(src="dev/img/video.mp4" type="video/mp4")
 					p Your browser does not support HTML5 video.
@@ -137,6 +205,7 @@ html(lang="ru")
 						input(type='text' placeholder='Ваше имя' reauired)
 						input(type='text' placeholder='Ваш телефон' required)
 						input(type='submit' value='Поехали!')
+					a(name='testi')
 			div.screen7.ymap
 				//script(type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ad73703b16c12ded75e42e2ed9d9d7128338742c5224b98dc6fb8239405be2337&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=true")
 			div.screen8.lazyload(data-script='dev/js/swiper.min.js' data-link='dev/css/swiper.min.css')
@@ -150,10 +219,10 @@ html(lang="ru")
 								i.fa.fa-star(aria-hidden="true")
 								i.fa.fa-star(aria-hidden="true")
 								i.fa.fa-star(aria-hidden="true")
-							p “The best so far prototyping tool out there, very easy to use for a non coder, highly recommended.”
+							p “Уже не первый раз езжу с Инной на экскурсию в Мир. В этот раз побывали в Москве 6-9 мая. Несмотря на капризы погоды (мощный снегопад в мае), получили удовольствие.”
 							div.testdeg
-								p Randy &amp; Victoria
-								p New York - USA		
+								p Анна
+								p Москва, Россия		
 						div.swiper-slide
 							p.stars
 								i.fa.fa-star(aria-hidden="true")
@@ -161,10 +230,10 @@ html(lang="ru")
 								i.fa.fa-star(aria-hidden="true")
 								i.fa.fa-star(aria-hidden="true")
 								i.fa.fa-star(aria-hidden="true")
-							p “The best so far prototyping tool out there, very easy to use for a non coder, highly recommended.”
+							p “С Инной путешествуем не первый раз и всегда в восторге.В этом году встречали Новый год в Беловежской пуще. Это было незабываемо!!!”
 							div.testdeg
-								p Randy &amp; Victoria
-								p New York - USA	
+								p Наталья и Александр
+								p Минск, Беларусь	
 						div.swiper-slide
 							p.stars
 								i.fa.fa-star(aria-hidden="true")
@@ -172,11 +241,12 @@ html(lang="ru")
 								i.fa.fa-star(aria-hidden="true")
 								i.fa.fa-star(aria-hidden="true")
 								i.fa.fa-star(aria-hidden="true")
-							p “The best so far prototyping tool out there, very easy to use for a non coder, highly recommended.”
+							p “Была в составе группы в автобусом экскурсионной туре на встрече 2017года в городе Лида. По приезде в город Лиду посетили дом ремесел, с удовольствием просмотрели и приняли участие в программе "Кола часу"..”
 							div.testdeg
-								p Randy &amp; Victoria
-								p New York - USA
+								p Ирина
+								p Минск, Беларусь
 					div.swiper-pagination
+					a(name='photo')
 			div.screen9.lazyload(data-script='dev/js/jquery-2.2.4.min.js')
 				h4.lazyload(data-link='dev/css/magnific-popup.css') Фото
 					//
@@ -194,7 +264,7 @@ html(lang="ru")
 							a.image-popup-vertical-fit(href='dev/img/gallery/003b.jpg')
 								img(class='lazyload' width='270px' height='270px' data-src='dev/img/gallery/003.jpg')
 						div.shot
-							a.image-popup-vertical-fit(href='dev/img/gallery/001b.jpg')
+							a.image-popup-vertical-fit(href='dev/img/gallery/004b.jpg')
 								img(class='lazyload' width='270px' height='270px' data-src='dev/img/gallery/004.jpg')
 			div.screen10
 				div.column

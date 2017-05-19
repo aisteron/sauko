@@ -23,6 +23,7 @@ body{margin:0; font-family: Arial, sans-serif}
 		width:100%;
 		background: rgba(0, 0, 0, 0.36);
 		padding-bottom:1em;
+		z-index:100;
 		  
 		  .navheader
 		
@@ -306,13 +307,22 @@ body{margin:0; font-family: Arial, sans-serif}
 				}
 			p
 				{
-					color:#8a8a8a;		
+					color:#8a8a8a;
+					margin-top:-2em;
+					text-align:left;
+					text-indent:1em;	
 				}
 			p:first-child
 				{
 					font-weight: bold;
 					color:#111;
-				}	
+					margin-top:0;
+				}
+			p:last-child
+				{
+					color:#333;
+					font-size:0.8em;
+				}		
 			
 
 		}
@@ -624,7 +634,47 @@ body{margin:0; font-family: Arial, sans-serif}
 
 }
 
+/*side nav*/
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    z-index: 101;
+}
 
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
 
 
 

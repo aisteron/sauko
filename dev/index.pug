@@ -173,11 +173,11 @@ html(lang="ru")
 
 			div.screen5
 				a(name='video')
-				video(width="400" muted)
+				//video(width="400" muted)
 					source(src="dev/img/video.mp4" type="video/mp4")
 					p Your browser does not support HTML5 video.
-
-				div.label
+				iframe.lazyload(data-src="https://www.youtube.com/embed/hVjHgzlhaYo")
+				//div.label
 					div.labelinner
 						h3 Вдохновляйтесь! <br><br><br> <i class="fa fa-play-circle-o" aria-hidden="true"></i>
 			div.screen6

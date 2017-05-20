@@ -1,4 +1,4 @@
-<?php<?php
+<?php
 
 		if($_POST['temail'])
 		{	

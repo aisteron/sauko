@@ -5,7 +5,7 @@ window.mobilecheck = function() {
 };
 
 if (!mobilecheck()){ //if desktop
-	console.log('this is desktop, go load 524KB of video!');
+	//console.log('this is desktop, go load 524KB of video!');
 	var vid = document.querySelectorAll('.screen5 video');
 	//var videosource = document.querySelectorAll('#videosource');
 	//vid[0].setAttribute('poster', 'dev/img/videobg.jpg');

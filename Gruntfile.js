@@ -14,12 +14,13 @@ module.exports = function(grunt){
 			        debug: false
 			      }
 			    },
+			    
+			    files: {
+			      'by.html':['dev/by.pug']
+			    },
 			    files: {
 			      'index.html': ['dev/index.pug']
 			    },
-			    files: {
-			      'by.html':['dev/by.pug']
-			    }
 			  }
 			},
 
@@ -97,7 +98,7 @@ module.exports = function(grunt){
 	grunt.loadNpmTasks('grunt-contrib-concat');
 	grunt.loadNpmTasks('grunt-browser-sync');
 
-	grunt.registerTask('default',['pug','less','concat','browserSync','watch'])
+	grunt.registerTask('default',['pug','less','concat','watch'])
 
 
 }; //end wrap

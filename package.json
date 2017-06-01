@@ -4,13 +4,13 @@
 	"devDependencies"	:	{
 		"grunt"					:	"latest",
 		"grunt-contrib-less"	:	"latest",
-		"grunt-contrib-pug"		: 	"latest",
 	    "grunt-contrib-watch"	: 	"latest",
 	    "grunt-contrib-concat"	: 	"latest",
 	    "less-plugin-autoprefix": 	"latest",
 	    "less-plugin-clean-css"	: 	"latest",
 	    "grunt-criticalcss"		:	"latest",
-	    "grunt-browser-sync"	:	"latest"
+	    "grunt-browser-sync"	:	"latest",
+	    "grunt-contrib-pug"		:	"latest"
 	}
 
 }

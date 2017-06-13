@@ -24,6 +24,9 @@ module.exports = function(grunt){
 			    files: {
 			      'en.html': ['dev/en.pug']
 			    },
+			    files: {
+			      'pl.html': ['dev/pl.pug']
+			    },
 			  }
 			},
 
@@ -68,7 +71,7 @@ module.exports = function(grunt){
 				},
 				scripts:
 				{
-					files:['dev/index.pug','dev/by.pug', 'dev/en.pug'],
+					files:['dev/index.pug','dev/by.pug', 'dev/en.pug','dev/pl.pug'],
 					tasks:['pug'],
 					options: {
 				      livereload: true,

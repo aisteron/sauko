@@ -21,11 +21,12 @@ module.exports = function(grunt){
 			    files: {
 			      'index.html': ['dev/index.pug']
 			    },
-			    files: {
-			      'en.html': ['dev/en.pug']
-			    },
+			    
 			    files: {
 			      'pl.html': ['dev/pl.pug']
+			    },
+			    files: {
+			      'en.html': ['dev/en.pug']
 			    },
 			  }
 			},
@@ -71,7 +72,7 @@ module.exports = function(grunt){
 				},
 				scripts:
 				{
-					files:['dev/index.pug','dev/by.pug', 'dev/en.pug','dev/pl.pug'],
+					files:['dev/index.pug','dev/by.pug', 'dev/pl.pug', 'dev/en.pug'],
 					tasks:['pug'],
 					options: {
 				      livereload: true,
